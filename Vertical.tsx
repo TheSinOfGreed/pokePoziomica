@@ -5,7 +5,7 @@ import { styles_vertical as styles } from './styles';
 import { Subscription } from 'expo-sensors/build/Pedometer';
 import wspolrzedne from './Vertical.interface';
 
-const Vertical = () => {
+const Vertical: React.FC = () => {
 
   const babel = useRef();
   const [pozycja, setPozycja] = useState<wspolrzedne>({
