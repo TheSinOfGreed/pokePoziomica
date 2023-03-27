@@ -26,7 +26,7 @@ const Vertical: React.FC = () => {
   }, []);
 
   const { x, y, z }: wspolrzedne = pozycja;
-  let kat_lewo_prawo: number = (Math.atan2(z, x) * (180 / Math.PI) - 90); //86
+  let kat_lewo_prawo: number = (Math.atan2(z, x) * (180 / Math.PI) - 86); //90
   let kat_gora_dol: number = (Math.atan2(z, y) * (180 / Math.PI) - 90);
 
   // if (Math.abs(kat_lewo_prawo) < 1 && Math.abs(kat_gora_dol) < 1) {
